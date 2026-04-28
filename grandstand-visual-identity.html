@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Grandstand Visual Identity | My Portfolio</title>
+    <link rel="preconnect" href="https://api.fontshare.com" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=boska@400,500,700&f[]=satoshi@400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./base.css" />
+    <link rel="stylesheet" href="./style.css" />
+<style>
+  body {
+    padding: 0 !important;
+  }
+
+  .project-page.container {
+    width: min(100% - 3rem, 980px) !important;
+    max-width: 980px !important;
+    margin-inline: auto !important;
+    padding-block: 4rem !important;
+  }
+
+  .project-page h1 {
+    max-width: 14ch !important;
+    margin-top: 0.75rem !important;
+    font-family: var(--font-display), Georgia, serif !important;
+    font-size: clamp(2.2rem, 5vw, 4.5rem) !important;
+    font-weight: 500 !important;
+    line-height: 1.05 !important;
+    letter-spacing: -0.035em !important;
+  }
+
+  .project-intro {
+    max-width: 68ch !important;
+    margin-top: 1rem !important;
+    color: var(--color-muted) !important;
+  }
+
+  .gallery-hint {
+    margin-top: 0.75rem !important;
+    color: var(--color-muted) !important;
+    font-size: var(--text-sm) !important;
+  }
+
+  .project-page .image-gallery {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr)) !important;
+  gap: 2rem !important;
+  max-width: 980px !important;
+  margin: 3rem auto 0 !important;
+}
+
+.project-page .image-gallery figure {
+  display: grid !important;
+  gap: 0.85rem !important;
+  margin: 0 !important;
+  padding: 1rem !important;
+  border: 1px solid oklch(from var(--color-text) l c h / 0.12) !important;
+  border-radius: var(--radius-lg) !important;
+  background: oklch(from var(--color-surface) l c h / 0.82) !important;
+  box-shadow: var(--shadow-sm) !important;
+}
+
+.project-page .gallery-link {
+  display: grid !important;
+  place-items: center !important;
+  min-height: 280px !important;
+  border-radius: var(--radius-md) !important;
+  background: var(--color-bg) !important;
+  overflow: hidden !important;
+}
+
+.project-page .image-gallery img {
+  display: block !important;
+  width: 100% !important;
+  max-height: 360px !important;
+  object-fit: contain !important;
+}
+
+.project-page .image-gallery figcaption {
+  color: var(--color-muted) !important;
+  font-size: var(--text-sm) !important;
+  line-height: 1.5 !important;
+}
+
+.project-page .image-gallery figure:first-child {
+  grid-column: auto !important;
+}
+</style>
+    <script defer src="./app.js"></script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <nav class="nav container" aria-label="Primary navigation">
+        <a class="brand" href="./index.html" aria-label="Back to homepage">
+          <svg
+            class="brand-mark"
+            viewBox="0 0 48 48"
+            fill="none"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <path
+              d="M10 36V12h7.5L24 27.2 30.5 12H38v24h-5.6V19.4L26 36h-4.2l-6.2-16.6V36H10Z"
+              fill="currentColor"
+            />
+            <path
+              d="M8 40h32"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              opacity=".32"
+            />
+          </svg>
+          <span>My Portfolio</span>
+        </a>
+
+        <div class="nav-links" aria-label="Section links">
+          <a href="./index.html#clips">Clips</a>
+          <a href="./index.html#design">Design</a>
+          <a href="./index.html#about">About</a>
+          <a href="./index.html#contact">Contact</a>
+        </div>
+
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch color theme">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path
+              d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="project-page container">
+        <a class="text-link back-link" href="./index.html#design">Back to Design Work</a>
+
+        <p class="section-kicker">Graphic Project</p>
+        <h1>Grandstand Magazine Visual Identity</h1>
+
+        <p class="project-intro">
+          A collection of graphics work for Grandstand Magazine.
+          This project reflects my role as a design manager and member of the founding launch team.
+        </p>
+        <p class="gallery-hint">Click any image to open it full size.</p>
+
+        <div class="image-gallery">
+          <figure>
+  <a
+    class="gallery-link"
+    href="./assets/brooke graphic.png"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <img
+      src="./assets/brooke graphic.png"
+      alt="Grandstand Magazine visual identity project image 1"
+    />
+  </a>
+  <figcaption>Graphic used for second-ever story published by Grandstand Magazine, <i>"The Swamp's Unforgettable Games."</i></figcaption>
+</figure>
+
+      <figure>
+  <a
+    class="gallery-link"
+    href="./assets/quarter zip art.png"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <img
+      src="./assets/quarter zip art.png"
+      alt="Grandstand Magazine visual identity project image 1"
+    />
+  </a>
+  <figcaption>Illustration made for basketball feature on quarter-zips, <i>"Suit Up? The Stark Shift In Sideline Style."</i></figcaption>
+</figure>
+
+        <figure>
+  <a
+    class="gallery-link"
+    href="./assets/welcome board_.png"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <img
+      src="./assets/welcome board_.png"
+      alt="Grandstand Magazine visual identity project image 1"
+    />
+  </a>
+  <figcaption>Graphic made for story about Florida hockey, <i>"Features
+Florida, Hockey State."</i></figcaption>
+  </figure>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© 2026 My Portfolio</p>
+        <a href="./index.html">Home</a>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Data Visualization | My Portfolio</title>
+
+    <link rel="preconnect" href="https://api.fontshare.com" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=boska@400,500,700&f[]=satoshi@400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <<link rel="stylesheet" href="./base.css" />
+<link rel="stylesheet" href="./style.css" />
+
+<style>
+  body {
+    padding: 0 !important;
+  }
+
+  .project-page.container {
+    width: min(100% - 3rem, 980px) !important;
+    max-width: 980px !important;
+    margin-inline: auto !important;
+    padding-block: 4rem !important;
+  }
+
+  .back-link {
+    margin-bottom: 2rem !important;
+  }
+
+  .project-page h1 {
+    max-width: 14ch !important;
+    margin-top: 0.75rem !important;
+    font-family: var(--font-display), Georgia, serif !important;
+    font-size: clamp(2.2rem, 5vw, 4.5rem) !important;
+    font-weight: 500 !important;
+    line-height: 1.05 !important;
+    letter-spacing: -0.035em !important;
+  }
+
+  .project-intro {
+    max-width: 68ch !important;
+    margin-top: 1rem !important;
+    color: var(--color-muted) !important;
+  }
+
+  .datawrapper-list {
+    display: grid !important;
+    gap: 1rem !important;
+    max-width: 860px !important;
+    margin: 3rem auto 0 !important;
+  }
+
+  .datawrapper-card {
+    display: grid !important;
+    gap: 0.75rem !important;
+    border: 1px solid oklch(from var(--color-text) l c h / 0.12) !important;
+    border-radius: var(--radius-lg) !important;
+    background: oklch(from var(--color-surface) l c h / 0.82) !important;
+    box-shadow: var(--shadow-sm) !important;
+    padding: clamp(var(--space-5), 4vw, var(--space-8)) !important;
+  }
+
+  .datawrapper-card h2 {
+    font-size: var(--text-lg) !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.01em !important;
+  }
+
+  .datawrapper-card p {
+    color: var(--color-muted) !important;
+  }
+</style>
+
+<script defer src="./app.js"></script>
+    
+    <script defer src="./app.js"></script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <nav class="nav container" aria-label="Primary navigation">
+        <a class="brand" href="./index.html" aria-label="Back to homepage">
+          <svg
+            class="brand-mark"
+            viewBox="0 0 48 48"
+            fill="none"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <path
+              d="M10 36V12h7.5L24 27.2 30.5 12H38v24h-5.6V19.4L26 36h-4.2l-6.2-16.6V36H10Z"
+              fill="currentColor"
+            />
+            <path
+              d="M8 40h32"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              opacity=".32"
+            />
+          </svg>
+          <span>My Portfolio</span>
+        </a>
+
+        <div class="nav-links" aria-label="Section links">
+          <a href="./index.html#clips">Clips</a>
+          <a href="./index.html#design">Design</a>
+          <a href="./index.html#about">About</a>
+          <a href="./index.html#contact">Contact</a>
+        </div>
+
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch color theme">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path
+              d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="project-page container">
+        <a class="text-link back-link" href="./index.html#design">Back to Design Work</a>
+
+        <p class="section-kicker">Data Visualization</p>
+        <h1>Data Visualization</h1>
+
+        <p class="project-intro">
+          A collection of maps created with Datawrapper and QGIS for reporting projects.
+          These projects use statistics and structured information to make reporting
+     easier to understand.
+        </p>
+
+        <div class="datawrapper-list">
+          <article class="datawrapper-card">
+            <div class="card-meta">
+              <span class="tag">Chart</span>
+              <span>Datawrapper</span>
+            </div>
+            <p>
+              A chloropleth map showing canopy coverage loss in Alachua County, Florida, which was built using a combination of Datawrapper and QGIS. This map was 
+              created for an upcoming WUFT story about tree loss in the county.
+            </p>
+            <div style="min-height:729px" id="datawrapper-vis-QdNGF"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/QdNGF/embed.js" charset="utf-8" data-target="#datawrapper-vis-QdNGF"></script><noscript><img src="https://datawrapper.dwcdn.net/QdNGF/full.png" alt="Canopy coverage loss in Alachua County (Choropleth map)" /></noscript></div>
+          </article>
+
+          <article class="datawrapper-card">
+            <div class="card-meta">
+              <span class="tag">Map</span>
+              <span>Datawrapper</span>
+            </div>
+            <p> 
+              A locator map showing selected running routes in Gainesville, Florida, based on reporter-collected data. The lines were drawn using geojson.
+            </p>
+            <div style="min-height:566px" id="datawrapper-vis-Ylepr"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/Ylepr/embed.js" charset="utf-8" data-target="#datawrapper-vis-Ylepr"></script><noscript><img src="https://datawrapper.dwcdn.net/Ylepr/full.png" alt="Where Gainesville runners log miles (Locator map)" /></noscript></div>
+          </article>
+
+          <article class="datawrapper-card">
+            <div class="card-meta">
+              <span class="tag">Chart</span>
+              <span>Datawrapper</span>
+            </div>
+            <p>
+              Chloropleth map showing opt-in to the K-12 school guardian program by county in Florida. This map was used in my WUFT-published story about the school guardian program.
+            </p>
+            <div style="min-height:720px" id="datawrapper-vis-84l95"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/84l95/embed.js" charset="utf-8" data-target="#datawrapper-vis-84l95"></script><noscript><img src="https://datawrapper.dwcdn.net/84l95/full.png" alt="Guardian program covers most of Florida’s school districts, but 14 counties still opt out (Choropleth map)" /></noscript></div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© 2026 My Portfolio</p>
+        <a href="./index.html">Home</a>
+      </div>
+    </footer>
+  </body>
+</html>
